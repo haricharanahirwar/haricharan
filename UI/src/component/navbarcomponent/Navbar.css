@@ -1,0 +1,29 @@
+/* Navbar.css */
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #f8f9fa !important;
+}
+
+.nav-link {
+  margin-right: 10px;
+  color: #f8f9fa !important;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #f39c12 !important;
+}
+
+.nav-link.active {
+  border-bottom: 2px solid #f39c12;
+}
+#logoimage{
+  height: 40px;
+  width: 100px;
+}

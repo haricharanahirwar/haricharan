@@ -1,0 +1,24 @@
+.main-service-container {
+  padding: 40px 0;
+  background-color: #f8f9fa;
+}
+
+.service-card {
+  background-color: white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h5 {
+  margin-bottom: 15px;
+  color: #0d6efd;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #444;
+}

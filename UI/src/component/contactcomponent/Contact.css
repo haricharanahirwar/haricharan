@@ -1,0 +1,27 @@
+.main-contact-container {
+  padding: 40px 0;
+  background-color: #f9f9f9;
+}
+
+.contact-form {
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.contact-form .form-label {
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+}
+
+.contact-form button {
+  font-weight: bold;
+}
+.contact-output{
+  text-align: center;
+  color: black;
+}
