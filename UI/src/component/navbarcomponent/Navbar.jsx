@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-md navbar-dark bg-dark">
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/"><img src="public/assets/images/HariCHARAN AHIRWAR.png" alt=""  id="logoimage"/></Link>
+        <Link className="navbar-brand" to="/"><img src="https://haricharan.vercel.app/assets/images/HariCHARAN AHIRWAR.png" alt=""  id="logoimage"/></Link>
         <button
           className="navbar-toggler"
           type="button"
