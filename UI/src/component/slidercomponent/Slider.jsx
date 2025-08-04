@@ -8,7 +8,7 @@ function Slider() {
         <div className="col-md-6 text-md-start main-left-container">
           <h2 className="animated-heading">I am MERN Stack Developer</h2>
           <button className="btn btn-light mt-3">
-            <Link to="/about">Learn More</Link>
+            <Link to="/about" className="learn-more-link">Learn More</Link>
           </button>
         </div>
 

@@ -3,10 +3,8 @@
   width: 100%;
   height: 600px;
   padding: 0;
- 
 }
 
-/* Left and right full height */
 .main-left-container,
 .main-right-container {
   height: 100%;
@@ -15,14 +13,47 @@
   justify-content: center;
 }
 
-/* Left: Black background + white text */
 .main-left-container {
   background-color: #000;
   color: #fff;
   padding: 40px;
+  text-align: left;
 }
 
-/* Right: Image full cover */
+/* Wrapper with fixed or relative width */
+.text-wrapper {
+  width: 80%;
+  max-width: 400px;
+  margin: 0;
+}
+
+.animated-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  width: 100%;
+  animation: slideInLeft 1.5s ease-out;
+}
+
+/* Learn More Button - reduced height and centered */
+.learn-more-link {
+  display: block;         /* block for margin auto */
+  width: 60%;             /* narrower width */
+  padding: 8px 0;         /* less vertical padding for shorter height */
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  margin: 0 auto;         /* centers the button */
+}
+
+.learn-more-link:hover {
+  background-color: #ddd;
+  transform: scale(1.03);
+}
 
 .slider-image {
   width: 100%;
@@ -31,15 +62,7 @@
   display: block;
 }
 
-/* Animation on heading */
-.animated-heading {
-  font-size: 2.5rem;
-  font-weight: bold;
-  animation: slideInLeft 1.5s ease-out;
-}
-
-/* Slide in animation */
-/* @keyframes slideInLeft {
+@keyframes slideInLeft {
   from {
     transform: translateX(-50%);
     opacity: 0;
@@ -48,35 +71,45 @@
     transform: translateX(0);
     opacity: 1;
   }
-} */
-
-@media (max-width:1024px) {
- .main-left-container {
-  background-color: #000;
-  color: #fff;
-  /* padding: 40px; */
-  height: 300px;
-}
-.main-right-container{
-  height: 300px;
-  width: 100%;
-}
-.main-right-container img{
-  height: 100%;
-  width: 100%;
-}
-.main-left-container a{
-  text-decoration: none;
-}
-.main-left-container h2{
-  font-size: 24px;
-  text-align: center;
-}
-.main-left-container button{
-  width: 300px;
-  margin-left: 15%;
-  padding: 5px 0px;
 }
 
- 
+/* Responsive */
+@media (max-width: 1024px) {
+  .slider-container {
+    height: auto;
+  }
+
+  .main-left-container {
+    height: auto;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .text-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .animated-heading {
+    font-size: 24px;
+  }
+
+  .learn-more-link {
+    height: 30px;
+    font-size: 16px;
+    width: 80%;       /* wider on mobile for better touch */
+    padding: 10px 0;
+    align-items: center;
+    text-align: center;  /* slightly bigger tap area */
+  }
+
+  .main-right-container {
+    height: 300px;
+    width: 100%;
+  }
+
+  .slider-image {
+    height: 100%;
+    width: 100%;
+  }
 }
