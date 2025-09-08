@@ -20,7 +20,7 @@
 /* First Project Card */
 .main-shippingwar-myfirst-project {
   height: 300px;
-  width: 300px;
+  width: 400px;
   margin-left: 10px;
 }
 .main-shippingwar-myfirst-project img {
@@ -33,7 +33,7 @@
 /* Second Project Card */
 .main-electrohub-mysecond-project {
   height: 300px;
-  width: 300px;
+  width: 400px;
   margin-left: 10px;
 }
 .main-electrohub-mysecond-project img {
@@ -46,23 +46,26 @@
 /* Button Section */
 .main-button-div {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 10px;
 }
+.main-button-div a{
+text-decoration: none;
+}
 .github-button {
-  width: 65px;
+  
   border-radius: 5px;
-  padding: 8px;
-  background-color: white;
+  padding: 5px 25px;
+  background: transparent;
+  font-family: sans-serif;
+  text-transform: uppercase ;
   color: white;
   border: none;
   cursor: pointer;
   font-weight: bold;
-  border: 1px solid black;
+  border: .1px solid black;
   border-radius: 10px;
-}
-.github-button:hover {
-  background-color: #444;
 }
 
 /* ✅ Mobile Responsive */
